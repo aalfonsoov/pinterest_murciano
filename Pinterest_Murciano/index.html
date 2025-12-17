@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Pinterest de pueblos y ciudades de Murcia: tarjetas con fotos, efectos tipo Pinterest y diseño responsive con Grid y Flex." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta property="og:title" content="Pinterest Murcia" />
+  <meta property="og:description" content="Galería tipo Pinterest de pueblos y ciudades de Murcia." />
+  <meta property="og:type" content="website" />
+
+  <title>Pinterest Murcia</title>
+
+  <link rel="stylesheet" href="pinterest.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="layout">
+
+    <!-- cabecera -->
+    <header class="header" role="banner">
+      <div class="header__left">
+        <button class="menuBtn" type="button" aria-controls="sidebar" aria-expanded="false" id="menuBtn">
+          ☰
+          <span class="sr-only">Abrir menú</span>
+        </button>
+        <div class="brand">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Pinterest Murcianico</span>
+        </div>
+      </div>
+
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar pueblo o ciudad…" autocomplete="off" />
+      </form>
+
+      <div class="header__right">
+        <a class="pill" href="#galeria">Explorar</a>
+        <a class="pill pill--ghost" href="https://www.turismoregiondemurcia.es/" target="_blank" rel="noopener">
+          Web Turismo
+        </a>
+      </div>
+    </header>
+
+    <!-- aside -->
+    <nav class="sidebar" id="sidebar" aria-label="Menú lateral">
+      <h2 class="sidebar__title">Categorías</h2>
+      <ul class="sideList">
+        <li><a href="#" class="sideLink is-active">Destacados</a></li>
+        <li><a href="#" class="sideLink">Costa</a></li>
+        <li><a href="#" class="sideLink">Interior</a></li>
+        <li><a href="#" class="sideLink">Historia</a></li>
+        <li><a href="#" class="sideLink">Naturaleza</a></li>
+      </ul>
+
+      <div class="sidebar__note">
+        <p><strong>Tip:</strong> pulsa el corazón para “Me gusta” y verás esa tarjeta primero.</p>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="main" id="galeria" role="main">
+      <div class="main__top">
+        <h1 class="main__title">Pueblos y ciudades de Murcia</h1>
+        <p class="main__subtitle">Efecto Pinterest (hover), reordenación por “Me gusta” y tarjetas modernas.</p>
+      </div>
+
+      <section class="pins" aria-label="Galería tipo Pinterest">
+
+        <!-- cards -->
+        <article class="pin" data-title="Murcia" data-link="https://es.wikipedia.org/wiki/Murcia" tabindex="0">
+          <div class="pin__media">
+            <img src="images/murcia.jpg" alt="Murcia">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Murcia</p>
+                <p class="pin__desc">Capital de la Región, río Segura y huerta.</p>
+              </div>
+
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <!-- corazón -->
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/Murcia" target="_blank" rel="noopener"
+                  title="Enlace externo">
+                  <!-- enlace -->
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Murcia</p>
+              <p class="pin__secondary">Ciudad • Cultura • Gastronomía</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" data-title="Cartagena" data-link="https://es.wikipedia.org/wiki/Cartagena_(Espa%C3%B1a)"
+          tabindex="0">
+          <div class="pin__media">
+            <img src="images/cartagena.jpg" alt="Cartagena">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Cartagena</p>
+                <p class="pin__desc">Puerto histórico, modernismo y teatro romano.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/Cartagena_(Espa%C3%B1a)" target="_blank"
+                  rel="noopener" title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Cartagena</p>
+              <p class="pin__secondary">Ciudad • Costa • Historia</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" data-title="Lorca" data-link="https://es.wikipedia.org/wiki/Lorca" tabindex="0">
+          <div class="pin__media">
+            <img src="images/lorca.jpg" alt="Lorca">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Lorca</p>
+                <p class="pin__desc">Castillo, barroco y tradición.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/Lorca" target="_blank" rel="noopener"
+                  title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Lorca</p>
+              <p class="pin__secondary">Pueblo • Interior • Patrimonio</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" data-title="Águilas" data-link="https://es.wikipedia.org/wiki/%C3%81guilas" tabindex="0">
+          <div class="pin__media">
+            <img src="images/aguilas.webp" alt="Águilas">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Águilas</p>
+                <p class="pin__desc">Playas, paseo marítimo y costa.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/%C3%81guilas" target="_blank"
+                  rel="noopener" title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Águilas</p>
+              <p class="pin__secondary">Costa • Playas</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" data-title="Caravaca de la Cruz"
+          data-link="https://es.wikipedia.org/wiki/Caravaca_de_la_Cruz" tabindex="0">
+          <div class="pin__media">
+            <img src="images/caravaca.jpg" alt="Caravaca de la Cruz">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Caravaca</p>
+                <p class="pin__desc">Destino histórico y religioso.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/Caravaca_de_la_Cruz" target="_blank"
+                  rel="noopener" title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Caravaca de la Cruz</p>
+              <p class="pin__secondary">Interior • Historia</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin">
+          <div class="pin__media">
+            <img src="images/cieza.jpg" alt="Cieza">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Cieza</p>
+                <p class="pin__desc">Floración, río Segura y paisajes de interior.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/Cieza" target="_blank"
+                  rel="noopener" title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Cieza</p>
+              <p class="pin__secondary">Interior • Naturaleza</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+
+
+        <article class="pin" data-title="San Pedro del Pinatar"
+          data-link="https://es.wikipedia.org/wiki/San_Pedro_del_Pinatar" tabindex="0">
+          <div class="pin__media">
+            <img src="images/Sanpedro.webp" alt="San Pedro del Pinatar">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">San Pedro</p>
+                <p class="pin__desc">Salinas, aves y mar Menor.</p>
+              </div>
+              <div class="pin__actions">
+                <button class="iconBtn like-btn" type="button" aria-pressed="false" title="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </button>
+                <a class="iconBtn ext-btn" href="https://es.wikipedia.org/wiki/San_Pedro_del_Pinatar" target="_blank"
+                  rel="noopener" title="Enlace externo">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3z" />
+                    <path d="M5 5h7v2H7v10h10v-5h2v7H5V5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">San Pedro del Pinatar</p>
+              <p class="pin__secondary">Costa • Naturaleza</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- FOOTER (fijo) -->
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">© 2025 Pinterest Murcia • Grid + Flex + JS</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
