@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Pinterest de pueblos y ciudades de Murcia: tarjetas con fotos, efecto Pinterest y diseño masonry con CSS." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta property="og:title" content="Pinterest Murcia" />
+  <meta property="og:description" content="Galería tipo Pinterest de pueblos y ciudades de Murcia." />
+  <meta property="og:type" content="website" />
+
+  <title>Pinterest Murcianico</title>
+
+  <link rel="stylesheet" href="pinterest.css" />
+</head>
+
+<body>
+  <div class="layout">
+
+    <header class="header" role="banner">
+      <div class="header__left">
+        <div class="brand">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Pinterest Murcianico</span>
+        </div>
+      </div>
+
+      <form class="search" role="search">
+        <label class="sr-only" for="q">Buscar</label>
+        <input id="q" name="q" type="search" placeholder="Buscar pueblo o ciudad…" autocomplete="off" />
+      </form>
+
+      <div class="header__right">
+        <a class="pill" href="#galeria">Explorar</a>
+      </div>
+    </header>
+
+
+    <main class="main" id="galeria" role="main">
+      <div class="main__top">
+        <h1 class="main__title">Pueblos y ciudades de Murcia</h1>
+      </div>
+
+      <section class="pins" aria-label="Galería tipo Pinterest">
+
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/murcia.jpg" alt="Murcia" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Murcia</p>
+                <p class="pin__desc">Capital de la Región, río Segura y huerta.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-murcia">
+                <label class="iconBtn like-label" for="like-murcia" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Murcia</p>
+              <p class="pin__secondary">Ciudad • Cultura • Gastronomía</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/cartagena.jpg" alt="Cartagena" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Cartagena</p>
+                <p class="pin__desc">Puerto histórico, modernismo y teatro romano.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-cartagena">
+                <label class="iconBtn like-label" for="like-cartagena" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Cartagena</p>
+              <p class="pin__secondary">Ciudad • Costa • Historia</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/lorca.jpg" alt="Lorca" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Lorca</p>
+                <p class="pin__desc">Castillo, barroco y tradición.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-lorca">
+                <label class="iconBtn like-label" for="like-lorca" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Lorca</p>
+              <p class="pin__secondary">Interior • Patrimonio</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/aguilas.webp" alt="Águilas" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Águilas</p>
+                <p class="pin__desc">Playas, paseo marítimo y costa.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-aguilas">
+                <label class="iconBtn like-label" for="like-aguilas" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Águilas</p>
+              <p class="pin__secondary">Costa • Playas</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/caravaca.jpg" alt="Caravaca de la Cruz" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Caravaca</p>
+                <p class="pin__desc">Destino histórico y religioso.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-caravaca">
+                <label class="iconBtn like-label" for="like-caravaca" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Caravaca de la Cruz</p>
+              <p class="pin__secondary">Interior • Historia</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/cieza.jpg" alt="Cieza" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">Cieza</p>
+                <p class="pin__desc">Floración, río Segura y paisajes de interior.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-cieza">
+                <label class="iconBtn like-label" for="like-cieza" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">Cieza</p>
+              <p class="pin__secondary">Interior • Naturaleza</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+
+        <article class="pin" tabindex="0">
+          <div class="pin__media">
+            <img src="images/Sanpedro.webp" alt="San Pedro del Pinatar" loading="lazy">
+            <div class="pin__overlay">
+              <div class="pin__meta">
+                <p class="pin__name">San Pedro</p>
+                <p class="pin__desc">Salinas, aves y mar Menor.</p>
+              </div>
+
+              <div class="pin__actions">
+                <input class="like-toggle" type="checkbox" id="like-sanpedro">
+                <label class="iconBtn like-label" for="like-sanpedro" title="Me gusta" aria-label="Me gusta">
+                  <svg class="ico ico-heart" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7.2-4.6-9.6-8.7C.8 9.4 2.2 6.6 4.9 5.6c1.6-.6 3.5-.2 4.8 1.1L12 9l2.3-2.3c1.3-1.3 3.2-1.7 4.8-1.1 2.7 1 4.1 3.8 2.5 6.7C19.2 16.4 12 21 12 21z" />
+                  </svg>
+                </label>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="pin__body">
+            <div>
+              <p class="pin__title">San Pedro del Pinatar</p>
+              <p class="pin__secondary">Costa • Naturaleza</p>
+            </div>
+            <button class="actionBtn" type="button">Guardar</button>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">© 2025 Pinterest Murcia</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
